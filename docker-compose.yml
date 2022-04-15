@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+    front_end:
+      container_name: front_end
+      build:
+        context: .
+        dockerfile: DockerfileNode
+      volumes:
+        - ./front_end:/code
+      working_dir: /code
+      #command: yarn run dev
+      #command: sh -c "cd daysoff && npm run dev"
+      tty: true
+      ports:
+        - 3000:3000

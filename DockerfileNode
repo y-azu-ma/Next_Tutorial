@@ -1,0 +1,8 @@
+FROM node:16-slim
+RUN mkdir /code
+WORKDIR /code
+COPY ./front_end/ /code/
+
+USER node
+
+CMD ["bash"]
