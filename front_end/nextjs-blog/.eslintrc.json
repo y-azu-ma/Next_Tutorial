@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "next/babel"]
+  /* import とか const とかいきなりエラー扱いされたので、上の部分に"next/babel"を追記する必要があった
+     https://zenn.dev/shimotaroo/articles/c8f2e751cd7877
+  */
 }
