@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -15,6 +16,21 @@ export default function Home() {
         <h1 className={styles.title}>
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <h3 className={styles.title}>
+          Read{' '}
+          <Link href="/posts/first-post">
+            <a>first post page!</a>
+          </Link>
+        </h3>
+        {/*
+        <h1 className="title">
+          Read{' '}
+          <Link href="/posts/first-post">
+            <a>this page!</a>
+          </Link>
+        </h1>
+        */}
       </main>
     </div>
   );
